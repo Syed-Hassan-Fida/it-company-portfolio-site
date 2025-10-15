@@ -386,8 +386,8 @@
             R.forEach((e => {
                 const {placeholder: t, required: n, countryCode: r, whatsappCountryCode: a, value: o, whatsappvalue: d, attributename: u} = e.dataset;
                 e.errorMessage = window.SMS_EMPTY_MESSAGE,
-                fetch("https://static.brevo.com/js/countries.json").then((e => e.json())).then((s => {
-                    I.push(new i.Z({
+                fetch("../../static.brevo/js/countries.json").then((e => e.json())).then((s => {
+                    I.push(new i.Z({ 
                         elem: e,
                         placeholder: t,
                         required: n,
